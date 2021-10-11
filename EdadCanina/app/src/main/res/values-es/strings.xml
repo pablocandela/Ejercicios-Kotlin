@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="how_old_are_you">How old are you?</string>
+    <string name="your_age">Your age</string>
+    <string name="calculate">Calculate</string>
+    <string name="you_must_insert_your_age">You must insert your age</string>
+    <string name="result_text">Your dog age is %d years old</string>
+</resources>
