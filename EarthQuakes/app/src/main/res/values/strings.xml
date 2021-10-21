@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EarthQuakes</string>
+    <string name="eq_empty_text">No hay terremotos que mostrar.</string>
+</resources>

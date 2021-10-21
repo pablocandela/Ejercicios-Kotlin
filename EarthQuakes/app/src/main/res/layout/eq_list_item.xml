@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/eq_magnitude_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:text="4.3" />
+
+        <ImageView
+            android:id="@+id/eq_arrow_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+
+        <TextView
+            android:id="@+id/eq_place_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/eq_arrow_image"
+            android:layout_toEndOf="@id/eq_magnitude_text"
+            tools:text="México city"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</layout>
