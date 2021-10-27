@@ -1,4 +1,4 @@
-package com.example.earthquakes
+package com.example.earthquakes.api
 
 import retrofit2.http.GET
 import retrofit2.Retrofit

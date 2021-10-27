@@ -1,12 +1,11 @@
-package com.example.earthquakes
+package com.example.earthquakes.main
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.earthquakes.EarthQuake
 import com.example.earthquakes.databinding.EqListItemBinding
 
 class EqAdapter: ListAdapter<EarthQuake, EqAdapter.EqViewHolder>(DiffCallback) {
@@ -23,12 +22,12 @@ class EqAdapter: ListAdapter<EarthQuake, EqAdapter.EqViewHolder>(DiffCallback) {
 
     lateinit var onIntemClickListener: (EarthQuake) -> Unit
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EqAdapter.EqViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EqViewHolder {
         val binding = EqListItemBinding.inflate(LayoutInflater.from(parent.context))
         return EqViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: EqAdapter.EqViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: EqViewHolder, position: Int) {
         val eartquake = getItem(position)
         holder.bind(eartquake)
     }
